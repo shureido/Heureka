@@ -7,3 +7,5 @@ robotframework-pabot==2.5.3
 cele nainstlujeme prikazom
 pip install -r requirements.txt
 otvor si prislušny TC a nasledne spusti prikazom   robot heureka.robot
+Vysledok testu:
+file:///C:/Users/Dominika/PycharmProjects/domuloha/log.html 
