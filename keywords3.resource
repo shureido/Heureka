@@ -6,81 +6,66 @@ Resource   locators3.resource
 *** Keywords ***
 Setup keyword
     Open Browser    https://www.heureka.sk    gc
-    Maximize Browser Window
+    Set Window Size    1800    1000
 
-Select grilovanie a piknik
+Vyber grilovanie a piknik
     [Arguments]    ${item}
     ${locator}    Format String    ${gril_piknik}     ${item}
     Wait Until Page Contains Element    ${locator}
     Click Element    ${locator}
 
-Select grily
+Vyber grily
     [Arguments]    ${item}
     ${locator}    Format String    ${grily}     ${item}
     Wait Until Page Contains Element    ${locator}
     Click Element    ${locator}
 
-Select rozpatie
+Vyber cenove rozpatie
     [Arguments]    ${item}
     ${locator}    Format String    ${cena_rozpatie}     ${item}
     Wait Until Page Contains Element    ${locator}
     Click Element    ${locator}
 
-Select gril1
+Vyber si gril1
     [Arguments]    ${item}
     ${locator}    Format String    ${gril1}     ${item}
+    Wait Until Page Contains    Fieldmann FZG 1004
     Wait Until Page Contains Element    ${locator}
-    Sleep    3s
     Click Element    ${locator}
 
-Select buy
+Zvol kupit na heureke
     [Arguments]    ${item}
     ${locator}    Format String    ${buy1}      ${item}
     Wait Until Page Contains Element    ${locator}
-    Sleep    3s
     Click Element    ${locator}
-    Sleep    3s
 
-Select continue
+Zvol pokračovat v nakupe
     [Arguments]    ${item}
     ${locator}    Format String    ${pokracovat}     ${item}
     Wait Until Page Contains Element    ${locator}
     Click Element    ${locator}
     Go Back
-    Sleep    3s
 
-Select gril2
+Vyber si gril2
     [Arguments]    ${item}
     ${locator}    Format String    ${gril2}     ${item}
+    Wait Until Page Contains    Tefal GC 205012
     Sleep    3s
     Wait Until Page Contains Element    ${locator}
-    Sleep    3s
     Click Element    ${locator}
 
-Select buy2
-    [Arguments]    ${item}
-    ${locator}    Format String    ${buy1}      ${item}
-    Wait Until Page Contains Element    ${locator}
-    Sleep    3s
-    Click Element    ${locator}
-    Sleep    5s
-
-Select gril3
+Vyber si gril3
     [Arguments]    ${item}
     ${locator}    Format String    ${gril3}     ${item}
-    Sleep    3s
+    Wait Until Page Contains    Orava EG-1900
     Wait Until Page Contains Element    ${locator}
-    Sleep    3s
     Click Element    ${locator}
-    Sleep    3s
 
 Select buy3
     [Arguments]    ${item}
     ${locator}    Format String    ${buy1}      ${item}
     Wait Until Page Contains Element    ${locator}
-    Sleep    3s
     Click Element    ${locator}
-    Sleep    5s
 
 Select go tu cart
     [Arguments]    ${item}
@@ -89,50 +74,56 @@ Select go tu cart
     Click Element    ${locator}
     Sleep    3s
 
-Item With Index Should Contain Icon
+Over počet v košiku
     [Arguments]    ${index}
     ${locator}    Format String   ${item_boxes}    [${index}]
     Wait Until Page Contains Element    ${locator}
     Wait Until Page Contains    3
 
-Select price1
+Over cenu Fieldmann
     [Arguments]    ${item}
     ${locator}    Format String     ${price1}      ${item}
     Wait Until Page Contains Element    ${locator}
     Wait Until Page Contains    64,90
-    Sleep    3s
     Click Element    ${locator}
-    Sleep    5s
 
-Select price2
+Over cenu Tefal
     [Arguments]    ${item}
     ${locator}    Format String     ${price2}      ${item}
     Wait Until Page Contains Element    ${locator}
-    Wait Until Page Contains    59,90
-    Sleep    3s
+    Wait Until Page Contains    69,90
     Click Element    ${locator}
-    Sleep    5s
 
-Select price3
+Over cenu Orava
     [Arguments]    ${item}
     ${locator}    Format String     ${price3}      ${item}
     Wait Until Page Contains Element    ${locator}
-    Wait Until Page Contains    72,21
+    Wait Until Page Contains   59,90
+    Click Element    ${locator}
+
+Zmaž produkt
+    [Arguments]    ${item}
+    ${locator}    Format String    ${odstran}     ${item}
+    Wait Until Page Contains Element    ${locator}
     Sleep    3s
     Click Element    ${locator}
-    Sleep    5s
-
-Select off
-    Click Element    xpath=//*[@id="snippet--cart-content-data"]/div[3]/div[1]/div/div[1]/a/svg
     Sleep    3s
 
-Item With Index Should Contain Icon1
+Zmaž produkt potvrdenie
+    [Arguments]    ${item}
+    ${locator}    Format String     ${odstran2}      ${item}
+    Wait Until Page Contains Element    ${locator}
+    Sleep    3s
+    Click Element    ${locator}
+    Sleep    3s
+
+Over počet v košiku2
     [Arguments]    ${index}
     ${locator}    Format String   ${item_boxes}    [${index}]
     Wait Until Page Contains Element    ${locator}
     Wait Until Page Contains    2
 
-Item With Index Should Contain Icon2
+Over počet v košiku0
     [Arguments]    ${index}
     ${locator}    Format String   ${item_boxes}    [${index}]
     Wait Until Page Contains Element    ${locator}
