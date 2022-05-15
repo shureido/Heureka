@@ -1,11 +1,9 @@
-# Heureka
+Spustenie projektu na tvojom pocitaci
 TC bol robeny v programe pycharm
-v prilozenom subore su requiremnts.txt, ktoré treba naištalovať, 
-t.j. robotframework==5.0
-robotframework-seleniumlibrary==6.0.0
-robotframework-pabot==2.5.3
-cele nainstlujeme prikazom
-pip install -r requirements.txt
-otvor si prislušny TC a nasledne spusti prikazom   robot heureka.robot
-Vysledok testu:
-file:///C:/Users/Dominika/PycharmProjects/domuloha/log.html 
+nainstaluj si python
+naistaluj si chromdriver
+stiahni si projekt Heureka do svojho pycharmu
+over si, ci si v danom projekte
+použita verzia gromdriver: v prilohe
+v prilozenom subore su requiremnts.txt, ktoré treba naištalovať
+spusti test
