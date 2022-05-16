@@ -50,14 +50,13 @@ Vyber si gril2
     [Arguments]    ${item}
     ${locator}    Format String    ${gril2}     ${item}
     Wait Until Page Contains    Tefal GC 205012
-    Sleep    3s
     Wait Until Page Contains Element    ${locator}
     Click Element    ${locator}
 
 Vyber si gril3
     [Arguments]    ${item}
     ${locator}    Format String    ${gril3}     ${item}
-    Wait Until Page Contains    Orava EG-1900
+    Wait Until Page Contains    Ariete Multi gril 3v1 1916
     Wait Until Page Contains Element    ${locator}
     Click Element    ${locator}
 
@@ -85,6 +84,7 @@ Over cenu Fieldmann
     ${locator}    Format String     ${price1}      ${item}
     Wait Until Page Contains Element    ${locator}
     Wait Until Page Contains    64,90
+    Sleep    3s
     Click Element    ${locator}
 
 Over cenu Tefal
@@ -94,11 +94,11 @@ Over cenu Tefal
     Wait Until Page Contains    69,90
     Click Element    ${locator}
 
-Over cenu Orava
+Over cenu Ariete
     [Arguments]    ${item}
     ${locator}    Format String     ${price3}      ${item}
     Wait Until Page Contains Element    ${locator}
-    Wait Until Page Contains   59,90
+    Wait Until Page Contains   55,90
     Click Element    ${locator}
 
 Zmaž produkt
