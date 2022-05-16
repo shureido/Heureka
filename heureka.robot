@@ -15,13 +15,13 @@ TC1
     Vyber si gril2    Tefal GC 205012
     Zvol kupit na heureke    Kupit vybrany gril
     Zvol pokračovat v nakupe    Pokracovat v nakupe
-    Vyber si gril3    Orava EG-1900
+    Vyber si gril3    Ariete Multi gril 3v1 1916
     Zvol kupit na heureke    Kupit vybrany gril
     Select go tu cart    Prejst do kosika
     Over počet v košiku    3
     Over cenu Fieldmann   Cena medzi 50-90 OK
     Over cenu Tefal    Cena medzi 50-90 OK
-    Over cenu Orava    Cena medzi 50-90 OK
+    Over cenu Ariete    Cena medzi 50-90 OK
     Zmaž produkt    odstran z kosika
     Zmaž produkt potvrdenie    potvrd odstranenie z kosika
     Over počet v košiku2   2
